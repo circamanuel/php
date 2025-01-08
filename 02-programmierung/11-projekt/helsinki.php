@@ -1,5 +1,5 @@
 <?php 
-$pageTitle = 'Eine Reise nach Helsinki, für dich geplant';
+//$pageTitle = 'Eine Reise nach Helsinki, für dich geplant';
 $page = 'helsinki';
 include './inc/header.inc.php'; 
 ?>

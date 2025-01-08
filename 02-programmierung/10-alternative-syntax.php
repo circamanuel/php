@@ -26,6 +26,6 @@ $bgColor = 'green';
     <h2>Keine Überschrift definiert</h2>
 <?php endif; ?>
 
-
+<p<?php if (!empty($bgColor)): ?> style="background-color:<?php echo $bgColor; ?>;"<?php endif;?>>Lorem ipsum ..</p>
 </body>
 </html>
