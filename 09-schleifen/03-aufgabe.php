@@ -7,5 +7,24 @@
 // die while-Schleife nur dann, wenn es zwingend für die Berechnung notwendig ist.
 
 
+$sum = 0;
+for ($x = 1; $x <= 100; $x++) {
+    $sum+=$x;
+}
+var_dump($sum);
+
+echo "----\n";
+
+
+$counter = 0;
+$x = 1;
+while ($counter < 1000) {
+    $counter += $x;
+    $x += 1;
+}
+var_dump($counter);
+
+
+
 
 ?>
