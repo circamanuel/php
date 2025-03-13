@@ -22,8 +22,8 @@ body {
     text-transform: uppercase;
     text-align: center;
     font-size: 3rem;
-    margin-bottom: 1rem;
-    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 2.5rem;
     letter-spacing: 0.1em;
 }
 
@@ -60,6 +60,7 @@ body {
 }
 
 .button {
+    font-family: inherit;
     -webkit-appearance:none;
     appearance: none;
     cursor: pointer;
@@ -78,8 +79,8 @@ body {
 .guestbook-separator {
     -webkit-appearance: none;
     appearance: none;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     border: 0.03125rem solid #4c5866;
 }
 
@@ -88,9 +89,9 @@ body {
     color: #4c5866;
     border: 0.0625rem solid #4c5866;
     border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    padding: 1rem 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
 .guestbook-entry-title {
@@ -124,4 +125,38 @@ body {
 
 .guestbook-entry-content > p:last-child {
     margin-bottom: 0;
+}
+
+.guestbook-pagination {
+    margin:0 -0.5rem;
+    padding:0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.guestbook-pagination-a {
+    display: block;
+    min-width: 1.5rem;
+    height: 1.5rem;
+    background-color: #e97200;
+    color: white;line-height: 1.5rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    text-align:center;
+    margin: 0.25rem 0.5rem;
+}
+
+.guestbook-pagination-a:hover {
+    background-color: #9f5209;
+}
+
+.guestbook-pagination-active,
+.guestbook-pagination-active:hover {
+    background-color: #4c5866;
+}
+
+.guestbook-footer {
+    color: #4c5866;
 }
