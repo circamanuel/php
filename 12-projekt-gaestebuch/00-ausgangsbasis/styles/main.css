@@ -128,7 +128,7 @@ body {
 }
 
 .guestbook-pagination {
-    margin:0 -0.5rem;
+    margin: 1.75rem -0.5rem;
     padding:0;
     list-style: none;
     display: flex;
@@ -138,8 +138,8 @@ body {
 
 .guestbook-pagination-a {
     display: block;
-    min-width: 1.5rem;
-    height: 1.5rem;
+    min-width: 2.5rem;
+    padding: 0.25rem 0.5rem;
     background-color: #e97200;
     color: white;line-height: 1.5rem;
     text-decoration: none;
@@ -159,4 +159,5 @@ body {
 
 .guestbook-footer {
     color: #4c5866;
+    margin-bottom: 2rem;
 }
