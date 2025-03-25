@@ -66,20 +66,23 @@
 
         <?php endforeach;?>
 
-        <ul class="guestbook-pagination">
-            <li class="guestbook-pagination-li">
-                <a class="guestbook-pagination-a guestbook-pagination-active" href="#">1</a>
-            </li>
-            <li class="guestbook-pagination-li">
-                <a class="guestbook-pagination-a" href="#">2</a>
-            </li>
-                <a class="guestbook-pagination-a" href="#">3</a>
-            </li>
-            <li class="guestbook-pagination-li">
-                <a class="guestbook-pagination-a" href="#">4</a>
-            </li>
-        </ul>
 
+        <?php
+            $numPages = ceil($countTotal / $perPage);
+        ?>
+
+        <?php if ($numPages > 1): ?>
+        <ul class="guestbook-pagination">
+            <?php for($x = 1; $x <= $numPages; $x++): ?>
+            <li class="guestbook-pagination-li">
+                <a class="guestbook-pagination-a <?php if ($x === $currentPage): ?> guestbook-pagination-active<?php endif; ?>"
+                   href="index.php?<?php echo http_build_query(['page' => $x]); ?>">
+                    <?php echo e($x) ?>
+                </a>
+            </li>
+            <?php endfor; ?>
+        </ul>
+        <?php endif; ?>
         <hr class="guestbook-separator">
 
         <footer class="guestbook-footer">
